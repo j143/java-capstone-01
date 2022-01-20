@@ -52,8 +52,8 @@ public class Department {
 
     public double getTotalSalary() {
         double total_salary = 0;
-        for (Employee emp : employees) {
-            total_salary += emp.getSalary();
+        for (int i=0; i <= lastAddedEmployeeIndex; i++) {
+            total_salary += employees[i].getSalary();
         }
         return total_salary;
     }
