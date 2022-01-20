@@ -6,5 +6,8 @@ public class HRApp {
         System.out.println(Jason.toString());
         System.out.println(Clarice.toString());
 
+        Department department1 = new Department("Physics");
+//        department1.addEmployee(Jason, "Physics");
+
     }
 }
