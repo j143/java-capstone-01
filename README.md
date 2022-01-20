@@ -19,3 +19,19 @@ public class HRApp {
 }
 
 ```
+
+### issues
+
+output
+```console
+Employee: 71 Clarice 23000.1
+Employee: 71 Clarice 23000.1
+Employee: 102 Mathison 40000.0
+Employee: 102 Mathison 40000.0
+Employee: 102 Mathison 40000.0
+Employee: 102 Mathison 40000.0
+120000.0
+40000.0
+
+```
+Only the last added element is available. Something to do with `static` keyword.
