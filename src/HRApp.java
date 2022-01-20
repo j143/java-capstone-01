@@ -9,6 +9,7 @@ public class HRApp {
         Department department1 = new Department("Physics");
         department1.addEmployee(Jason);
         department1.addEmployee(Clarice);
+        department1.getAllEmployees();
 
     }
 }

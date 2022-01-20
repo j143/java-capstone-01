@@ -29,8 +29,8 @@ public class Department {
     }
 
     public void getAllEmployees() {
-        for(int i=0; i < employees.length; i++) {
-            System.out.println("Hello");
+        for(int i=0; i < employees.length && employees[i] != null; i++) {
+            System.out.println(employees[i]);
         }
     }
 }
