@@ -33,4 +33,17 @@ public class Department {
             System.out.println(employees[i]);
         }
     }
+
+    public int getEmployeeCount() {
+        return lastAddedEmployeeIndex+1;
+    }
+
+    public Employee getEmployeeById(int id) {
+        for (Employee emp : employees) {
+            if(emp.getId() == id)
+                return employees[id];
+        }
+
+        return null;
+    }
 }
