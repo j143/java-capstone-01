@@ -52,9 +52,17 @@ public class Department {
 
     public double getTotalSalary() {
         double total_salary = 0;
-        for (int i=0; i <= lastAddedEmployeeIndex; i++) {
+        for (int i=0; i < lastAddedEmployeeIndex+1; i++) {
             total_salary += employees[i].getSalary();
         }
         return total_salary;
+    }
+
+    public double getAverageSalary() {
+        double average_salary = 0;
+        for (int i=0; i < lastAddedEmployeeIndex+1; i++) {
+            average_salary += employees[i].getSalary();
+        }
+        return average_salary/(lastAddedEmployeeIndex+1);
     }
 }
