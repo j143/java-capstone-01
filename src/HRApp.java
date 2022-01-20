@@ -7,7 +7,8 @@ public class HRApp {
         System.out.println(Clarice.toString());
 
         Department department1 = new Department("Physics");
-//        department1.addEmployee(Jason, "Physics");
+        department1.addEmployee(Jason);
+        department1.addEmployee(Clarice);
 
     }
 }

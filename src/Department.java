@@ -7,6 +7,8 @@ public class Department {
     private int capacity;
     private String name;
 
+    private int lastAddedEmployeeIndex = -1;
+
     public Department(String name) {
         this.name = name;
     }
@@ -19,9 +21,11 @@ public class Department {
         this.name = name;
     }
 
-    public void addEmployee(Employee[] employees, String name) {
-        this.employees = employees;
-        this.name = name;
+    public void addEmployee(Employee employee) {
+        if(lastAddedEmployeeIndex < employees.length) { // before first element -1 < 0, second element 0 < 1
+            lastAddedEmployeeIndex++;
+            employees[lastAddedEmployeeIndex] = employee;
+        }
     }
 
     public void getAllEmployees() {
