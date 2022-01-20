@@ -12,6 +12,7 @@ public class HRApp {
         department1.getAllEmployees();
         Employee emp1 = department1.getEmployeeById(1);
         System.out.println(emp1.toString());
+        System.out.println(department1.getTotalSalary());
 
     }
 }

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Department {
 
-    private static Employee [] employees = new Employee[10];
+    private static Employee[] employees = new Employee[10];
 
     private int capacity;
     private String name;
@@ -39,11 +39,22 @@ public class Department {
     }
 
     public Employee getEmployeeById(int id) {
+        /*
+        Iterate over the employees array, get the Employee item
+         */
         for (Employee emp : employees) {
             if(emp.getId() == id)
-                return employees[id];
+                return emp;
         }
 
         return null;
+    }
+
+    public double getTotalSalary() {
+        double total_salary = 0;
+        for (Employee emp : employees) {
+            total_salary += emp.getSalary();
+        }
+        return total_salary;
     }
 }
